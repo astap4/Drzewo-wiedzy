@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,300;1,400&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    outline: none; border:none;
+    text-decoration: none;
+    color: rgb(104, 91, 99);
+
+}
+html{
+    font-size: 80%;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+.header .header-1{
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .header-1 .image{
+    height: 10%;
+    width: 10%;
+}
+.header .header-1 .kontakt{
+    color: rgb(68, 63, 63);
+    margin-left: 1%;
+ 
+    font-size: 90%;
+}
+.header .header-1 .icons{
+    margin-left: 1%;
+    color: rgb(7, 145, 44);
+}
+
+.header .header-1 .icons div:hover,
+.header .header-1 .icons a:hover{
+    color: rgb(7, 170, 170);
+}
+[id="login-btn"] {
+    margin-left: 5%;
+}
+[id="sign-out-alt"] {
+    margin-left: 5%;
+
+}
+[id="shopping-cart"] {
+    padding-left: 0.3cm;
+    padding-top: 1cm;
+
+}
+
+.login-form-container{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    background: white;
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 10000;
+    height: 100%;
+    width: 100%;
+}
+.login-form-container form{
+    background: white;
+    border: yellowgreen;
+    border-style: groove;
+    width: 40rem;
+    padding:2rem;
+    box-shadow: 10px 10px 5px grey;
+    border-radius: 0.2cm;
+    margin:2rem;
+}
+.O-Nas{
+    background: rgb(160, 158, 30);
+    border: yellowgreen;
+    border-style: groove;
+    width: 70%;
+    padding:2rem;
+    box-shadow: 10px 10px 5px grey;
+    border-radius: 0.2cm;
+    margin:2rem;
+}
+.login-form-container h3{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+}
+.login-form-container form span{
+    display: block;
+    font-size: 15px;
+    padding-top: 10px;
+}
+.login-form-container form .box{
+    width: 100%;
+    font-size: 12px;
+} 
+.login-form-container form .checkbox{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+}
+.login-form-container form .checkbox .check{
+    font-size: 1px;
+    color: rgb(129, 125, 129);
+    cursor: pointer;
+    width: 10%;
+ 
+}
+.login-form-container form .checkbox label{
+    font-size: 12px;
+    color: rgb(129, 125, 129);
+    cursor: pointer;
+}
+.btn{
+    margin-top: 13px;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 5px;
+    color:white;
+    background: rgb(79, 177, 79);
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: 0px 5px 5px rgb(237, 247, 234) inset;
+    text-align: center;
+    width: 180px;
+}
+.btn:hover{
+    background: rgb(1, 119, 1);
+}
+.login-form-container form p{
+    padding-top: 10px;
+    color:rgb(104, 91, 99);
+    font-size: 15px;
+}
+.login-form-container form a:hover{
+    color: rgb(7, 170, 170);
+}    
+.login-form-container #close-login-btn{
+    position: absolute;
+    top: 15px; right: 25px;
+    font-size: 30px;
+    color: slategrey;
+    cursor: pointer;
+}
+.login-form-container #close-login-btn:hover{
+    color: teal;}
+
+    
+.maingallery {
+    margin: -50px; 
+    display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.gallery {
+    margin: 10px;
+    padding: 11px;
+    padding-left: 25px;
+    border: 2px solid #ccc;
+
+    width: 191px;
+    height: 400px;
+    box-shadow: 5px 5px 5px rgb(190, 188, 188);
+  }
+  
+.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+.gallery img {
+    width: 137px;
+    height:197px;
+  }
+  
+ .heading{
+      text-align: center;
+      margin-bottom: 15px;
+  }
+  .separation hr {
+      color: slategrey;
+      width: 80%;
+      size: 2px;
+  }
+
+
+.maingallery hr{
+    color: slategrey;
+    width: 80%;
+    size: 2px;   
+}
+
+.maingallery .gallery .content h3{
+    font-size: 14px;
+    color: rgb(81, 83, 85);
+}
+.maingallery .gallery .content .price{
+    font-size: 17px;
+    padding-top: 10px;
+}
+.maingallery .gallery .content .price span{
+    font-size: 15px;
+    color: rgb(109, 111, 112);
+    text-decoration: line-through;
+}
+
+
+
+.information {
+    background-image: url("Pastel-Background.png");
+
+    margin: 0;
+}
+.information .Main{
+    width: 70%;
+    margin: 5px auto;
+    padding: 50px;
+    background: white;
+    position: relative;
+}
+.information .Main h1{
+    margin: 0;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(100, 78, 31);
+    text-transform: uppercase;
+
+    font-weight: 700;
+}
+.information .Main h2{
+    color: rgb(77, 122, 32);
+    font-weight: 900;
+}
+.information .Main span{
+    color: rgb(231, 149, 42);
+    font-size: 20px;
+}
+
+.information .Main .i-family {
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+.information .Main .i-family .family-header__text__bold{
+    color: rgb(134, 92, 28);
+
+}
+.information .Main .cennosci{
+     position: relative;
+
+}
+.information .Main .cennosci .desc{
+
+    height: 300px;
+    left: 0;
+     text-align: left;
+     position: relative;
+     padding-right: 350px;
+     color: rgb(134, 92, 28);
+}
+
+.information .Main .cennosci .desc img{
+
+    height: 100%;
+    right: 0;
+    position: absolute;
+    top: 10px;
+    }
+
+.information .Main table {
+    width: 90%;
+}    
+.information .Main table tr{
+    background-color: rgb(238, 230, 230);
+}
+.section-header{
+    background-color: rgb(188, 241, 181);
+    text-align: center;
+    font-size:25px;
+}
+
+.container-content-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    width: 100%;
+    margin:auto;
+
+
+}
+
+.shop-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: 5px 5px 5px rgb(190, 188, 188);
+    position: relative;
+    height: 400px;
+
+}
+
+.shop-items img{
+    width: 100%;
+    height: 270px;
+    object-fit: contain;
+}
+
+
+.shop-items .shop-item-title{
+    font-size: 15px;
+
+}
+.shop-items .shop-item-details{
+    position: relative;
+}
+.shop-items .shop-item-price{
+
+    padding-left: 80px;
+    font-size: 15px;
+}
+
+.shop-items:hover {
+    border: 1px solid #777;
+  }
+  
+.content-section {
+    position:relative;
+}
+
