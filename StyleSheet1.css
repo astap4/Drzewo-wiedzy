@@ -7,6 +7,7 @@ form {
     position: relative;
     width: 650px;
     margin: 0 auto;
+  
    
 }
 
@@ -27,22 +28,20 @@ button {
     position: absolute;
     top: 0px;
     right: 0px;
-    width: 190px;
+    width: 100px;
     height: 42px;
     border: none;
     background: #72ca6a;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #F9F0DA;
 }
 
 
 
-    button:before {
-        content: "\f002";
-        font-family: FontAwesome;
-        font-size: 16px;
-        color: #F9F0DA;
-    }
     .topnav {
         background-color: #72ca6a;
         overflow: hidden;

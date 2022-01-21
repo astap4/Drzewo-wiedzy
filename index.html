@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="shortcut icon" href="treebook.jpg">
+    <link rel="shortcut icon" href="./assets/img/treebook.jpg">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="StyleSheet1.css">
@@ -24,10 +24,10 @@
                 Telefon kontaktowy<br />
                 pn-pt (10:00-21:00)
             </div>
-            <form>
-                <input type="text" placeholder="Wyszukaj...">
-                <button type="submit" class="searchButton">
-                              </button>
+            <form action="" class="search-form"> 
+                <input type="search" placeholder="Wyszukaj..." id="search-box">
+                <div id="search-btn" class="fas fa-search">
+                </div>         
             </form>
             <div class="icons">
                 <div id="login-btn" class="fas fa-user">
@@ -39,7 +39,7 @@
                 </div>
 
                 <div id="shopping-cart" class="fas fa-shopping-cart">
-                    <a href="#">Koszyk</a>
+                    <span>Koszyk</span>
                 </div>
             </div>
 
@@ -65,7 +65,7 @@
                     <li><a href="#">Sport</a></li>
                 </ul>
         </ul>
-        <a href="Strona glowna.html">Strona główna</a>
+        <a href="index.html">Strona główna</a>
         <a href="O nas.html">O nas</a>
         <a href="Platnosci.html">Płatnośći</a>
         <a href="Dostawa.html">Dostawa</a>
@@ -163,15 +163,13 @@
     </div>
     <div class="shop-items">
         <div class="shop-item">
-            <span class="shop-item-title">Elon Musk. Biografia twórcy </span>
-            <img class="shop-item-image" src="./assets/img/3. biografia.jpg">
+            <span class="shop-item-title">Angela Merkel. Cesarzowa Europy</span>
+            <img class="shop-item-image" src="./assets/img/8. biografia.jpg">
             <div class="shop-item-details">
-                <span class="shop-item-price">35,19 zł</span>
-                <div class="shop-item-details-button">
+                <span class="shop-item-price">34,56 zł</span>
                 <button class="btn btn-primary shop-item-button" type="button">
                     Dodaj do koszyka
                 </button>
-             </div>
             </div>
         </div>
     </div>
@@ -201,19 +199,14 @@
     </div>
 </section>
 
-<section class="container content-section">
+<section class="container cart-section" style="display: none;">
     <h2 class="section-header">Koszyk</h2>
-    <div class="cart-row">
-        <span class="cart-item cart-header cart-column">Przedmiot</span>
-        <span class="cart-price cart-header cart-column">Cena</span>
-        <span class="cart-quantity cart-header cart-column">Ilość</span>
-    </div>
     <div class="cart-items">
 
     </div>
     <div class="cart-total">
         <strong class="cart-total-title">Do zapłaty</strong>
-        <span class="cart-total-price">$0</span>
+        <span class="cart-total-price">0 zł</span>
     </div>
     <button class="btn btn-primary btn-purchase" type="button">
         Kup
@@ -270,5 +263,6 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="Script1.js"></script>
     <script src="store.js" async></script>
+
 </body>
 </html>

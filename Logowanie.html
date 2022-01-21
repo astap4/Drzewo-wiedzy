@@ -1,35 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logowanie</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="shortcut icon" href="treebook.jpg">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="StyleSheet1.css">
-</head>
-<body>
-    <div class="login-form-container">
-        <div id="close-login-btn" class="fas fa-times"></div>
-        <form action="">
+<html >
+    <head>
+        <title>Logowanie</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="StyleSheet1.css">
+        <link rel="shortcut icon" href="./assets/img/treebook.jpg">
+        <script type="text/javascript">
+            const USERS = [
+                {
+                    mail: "astapchik@gmail.com",
+                    password: "111",
+
+                },
+                {
+                    mail: "vaskovskaya@gmail.com",
+                    password: "000",
+
+                },
+                {
+                    mail: "admin@gmail.com",
+                    password: "123",
+
+                },
+            ];
+            
+            function myAction(){
+                var mail = document.forms["myform"].elements["name"].value;
+                var password = document.forms["myform"].elements["password"].value;
+                var tekst1 = "Witaj " + mail +"!";
+                var tekst2 = "Niepoprawne dane logowania";
+                
+                function findUser(user){
+                    if (user.mail == mail) {
+                        return true;
+                    }
+               
+                }
+                const findedUsers = USERS.find(findUser)
+                console.log(findedUsers)
+
+              
+
+                if (findedUsers != undefined && findedUsers.password == password) {
+                    document.getElementById('message').innerHTML = tekst1;
+                }
+                else {
+                    document.getElementById('message').innerHTML = tekst2;
+
+                }
+                       
+            }         
+        </script>
+    </head>
+    <body>
+        <div class="login-form-container">
+        <form name="myform">
             <h3>Logowanie</h3>
-            <span>e-mail:</span>
-            <input type="email" name="" class="box" placeholder="wpisz adres email" id="">
-            <span>hasło:</span>
-            <input type="password" name="" class="box" placeholder="wpisz hasło" id="">
-            <div class="checkbox">
-                <input type="checkbox" name="" class="check" id="remember-me">
-                <label for="remember-me"> Zapamiętaj mnie</label>
-            </div>
-            <input type="submit" value="Zaloguj się" class="btn">
-            <p><a href="#">Nie pamiętasz hasła?</a></p>
-            <p>Nie masz konta?  <a href="#">Zarejestruj się!</a></p>
-    
+        <span>e-mail:</span>
+        <input type = "text" name = "name" placeholder="wpisz adres email"><br/>
+        <span>hasło:</span>
+        <input type = "text" name = "password" placeholder="wpisz hasło"><br/>
+        <input type = "button" value="Zaloguj się" class="btn" onclick="myAction()">
+        <p><a href="#">Nie pamiętasz hasła?</a></p>
+        <p>Nie masz konta?  <a href="#">Zarejestruj się!</a></p>
         </form>
-    </div>
-    
-</body>
+        <br>
+        <p id="message"></p>
+       </div>
+
+    </body>
 </html>

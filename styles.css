@@ -31,18 +31,24 @@ html{
  
     font-size: 90%;
 }
-.header .header-1 .icons{
-    margin-left: 1%;
-    color: rgb(7, 145, 44);
-}
 
 .header .header-1 .icons div:hover,
 .header .header-1 .icons a:hover{
     color: rgb(7, 170, 170);
 }
+[id="search-btn"] {
+    position: absolute;
+    margin: 9px;
+    margin-left: -34px;
+    font-size: 25px;
+    color: #4fbd65;
+}
+
+
 [id="login-btn"] {
     margin-left: 5%;
 }
+
 [id="sign-out-alt"] {
     margin-left: 5%;
 
@@ -52,6 +58,14 @@ html{
     padding-top: 1cm;
 
 }
+[id="message"] {
+    font-size: 15px;
+    background-color: rgb(165, 231, 165);
+    position: absolute;
+    margin-top: 430px;
+    text-align: center;
+    width: 100%;
+}  
 
 .login-form-container{
     display: flex;
@@ -118,7 +132,7 @@ html{
     cursor: pointer;
 }
 .btn{
-    margin-top: 13px;
+    margin-top: 20px;
     display: inline-block;
     padding: 8px;
     border-radius: 5px;
@@ -129,11 +143,12 @@ html{
     font-weight: 500;
     box-shadow: 0px 5px 5px rgb(237, 247, 234) inset;
     text-align: center;
-    width: 180px;
+    width: 230px;
 }
 .btn:hover{
     background: rgb(1, 119, 1);
 }
+
 .login-form-container form p{
     padding-top: 10px;
     color:rgb(104, 91, 99);
@@ -212,7 +227,7 @@ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
 
 .information {
-    background-image: url("Pastel-Background.png");
+    background-image: url("./assets/img/Pastel-Background.png");
 
     margin: 0;
 }
@@ -290,9 +305,7 @@ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 30px;
     width: 100%;
     margin:auto;
-
-
-}
+   }
 
 .shop-items {
     display: flex;
@@ -330,5 +343,27 @@ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   
 .content-section {
     position:relative;
+    width: 80%;
 }
 
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.cart-quantity-cart-column{
+    position: relative;
+}
+.cart-quantity-input {
+    background-color: khaki;
+    width: 60%;
+}
+.btn-danger {
+    position: absolute;
+    background-color: rgb(192, 80, 80);
+    margin-top: -1px ;
+    
+}
+.container-cart-section {
+    background-color: lawngreen;
+}
