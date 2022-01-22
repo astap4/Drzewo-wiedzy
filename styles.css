@@ -58,6 +58,14 @@ html{
     padding-top: 1cm;
 
 }
+
+[id="shopping-cart2"] {
+    padding-left: 9.3cm;
+    padding-top: 1cm;
+    font-size: 25px;
+    color: rgb(41, 129, 81);
+
+}
 [id="message"] {
     font-size: 15px;
     background-color: rgb(165, 231, 165);
@@ -303,8 +311,9 @@ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 30px;
-    width: 100%;
+    width: 90%;
     margin:auto;
+    padding-bottom: 100px;
    }
 
 .shop-items {
@@ -319,7 +328,7 @@ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
 .shop-items img{
     width: 100%;
-    height: 270px;
+    height: 250px;
     object-fit: contain;
 }
 
@@ -353,6 +362,7 @@ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 .cart-quantity-cart-column{
     position: relative;
+    display: flex;
 }
 .cart-quantity-input {
     background-color: khaki;
@@ -364,6 +374,29 @@ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     margin-top: -1px ;
     
 }
-.container-cart-section {
-    background-color: lawngreen;
+.container-cart-section{
+    position: fixed;
+    top:0; left:-105%;
+    height: 100%;
+    width: 55%;
+    padding: 50px;
+  
+}
+
+.container-cart-section.active {
+    background-color: rgb(236, 247, 226);
+    left:0;
+}
+.container-cart-section #close-login-btn{
+    top:25px;
+    position: absolute;
+    font-size: 30px;
+    color: rgb(77, 145, 92);
+
+}
+.container-cart-section #close-login-btn:hover{
+    color: rgb(54, 97, 54);
+}
+.cart-total-title, .cart-total-price{
+    font-size: 20px;
 }

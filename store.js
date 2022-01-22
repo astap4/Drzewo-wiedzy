@@ -1,3 +1,31 @@
+let cartForm = document.querySelector('.container-cart-section');
+document.querySelector('#shopping-cart').onclick = () =>{
+    cartForm.classList.toggle('active');
+}
+document.querySelector('#close-login-btn').onclick = () =>{
+    cartForm.classList.remove('active');
+}
+
+var swiper = new Swiper(".books-slider", {
+    loop: true,
+    centeredSlides: true,
+    autoplay: {
+        delay: 9500,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+    },
+});
+
 function ready(){
     var removeCartItemButtons = document.getElementsByClassName('btn-danger');
     for(var i = 0; i < removeCartItemButtons.length; i++){
@@ -66,7 +94,7 @@ function addItemToCart(title, price, imageSrc){
     }
     var cartRowContents = `
     <div class="cart-item cart-column">
-            <img class="cart-item-image" src="${imageSrc}" width="100" height="150">
+            <img class="cart-item-image" src="${imageSrc}" width="30" height="50">
             <span class="cart-item-title">${title}</span>
         </div>
         <span class="cart-price cart-column">${price}</span>
