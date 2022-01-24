@@ -1,3 +1,9 @@
+let cartCheck = document.querySelector('.check-cart-section');
+console.log (cartCheck);
+document.querySelector('.shop-item-button').onclick = () =>{
+    cartForm.classList.toggle('active');
+}
+
 
 
 let cartForm = document.querySelector('.container-cart-section');

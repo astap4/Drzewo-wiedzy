@@ -418,3 +418,16 @@ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 .cart-total-title, .cart-total-price{
     font-size: 16px;
 }
+
+.check-cart-section {
+    position: fixed;
+    top:50%; left: -105%;
+    height: 10%;
+    width: 40%;
+    padding: 50px;
+    background:rgb(248, 247, 190);
+}
+.check-cart-section.active {
+    background-color: rgb(236, 247, 226);
+    left:30%;
+}
