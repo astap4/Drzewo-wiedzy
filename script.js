@@ -1,12 +1,14 @@
-let cartCheck = document.querySelector('.check-cart-section');
-console.log (cartCheck);
-document.querySelector('.shop-item-button').onclick = () =>{
-    cartForm.classList.toggle('active');
-}
+const cartCheckNotification = document.querySelector('.check-cart-section');
+const cartForm = document.querySelector('.container-cart-section');
+const shopItemButtons = document.querySelectorAll('.shop-item-button');
 
+shopItemButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        cartCheckNotification.classList.add('active');
+        setTimeout(() => cartCheckNotification.classList.remove('active'), 2000);
+     });
+})
 
-
-let cartForm = document.querySelector('.container-cart-section');
 document.querySelector('#shopping-cart').onclick = () =>{
     cartForm.classList.toggle('active');
 }
@@ -55,7 +57,7 @@ var swiper = new Swiper(".slider", {
     },
 });// JavaScript source code
 
-function ready(){
+function ready() {
     var removeCartItemButtons = document.getElementsByClassName('btn-danger');
     for(var i = 0; i < removeCartItemButtons.length; i++){
         var button = removeCartItemButtons[i];
