@@ -9,8 +9,6 @@ shopItemButtons.forEach((btn) => {
      });
 })
 
-document.getE();
-
 document.querySelector('#shopping-cart').onclick = () =>{
     cartForm.classList.toggle('active');
 }
